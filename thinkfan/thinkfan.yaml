@@ -1,0 +1,20 @@
+fans:
+ - tpacpi: /proc/acpi/ibm/fan
+
+sensors:
+ - hwmon: /sys/devices/platform/coretemp.0/hwmon/hwmon4/temp3_input
+ - hwmon: /sys/devices/platform/coretemp.0/hwmon/hwmon4/temp1_input
+ - hwmon: /sys/devices/platform/coretemp.0/hwmon/hwmon4/temp2_input
+ - hwmon: /sys/devices/virtual/thermal/thermal_zone0/hwmon0/temp1_input
+
+levels:
+ - [0, 0, 55]
+ - [1, 53, 60]
+ - [2, 58, 63]
+ - [3, 61, 66]
+ - [4, 64, 69]
+ - [5, 67, 72]
+ - [6, 70, 76]
+ - [7, 74, 80]
+ - [127, 79, 32767]
+
